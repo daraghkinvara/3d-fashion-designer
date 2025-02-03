@@ -168,12 +168,14 @@ h1, h2, h3 {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  width: 350px;
+  width: 90%; /* ✅ Make modal responsive */
+  max-width: 350px;
   text-align: center;
 }
 
 /* ✅ Input & Buttons Styling */
 .modal input {
+  font-size: 16px; /* ✅ Larger font to prevent auto-zoom */
   width: 100%;
   padding: 10px;
   margin-top: 10px;
@@ -185,6 +187,7 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
+  flex-wrap: wrap;
 }
 
 .btn-cancel {
