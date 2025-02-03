@@ -143,3 +143,57 @@ h1, h2, h3 {
   background: #333;
   transform: translateY(-3px);
 }
+
+/* ✅ Darkened Background Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* ✅ Darkens background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* ✅ Centered Modal */
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+}
+
+/* ✅ Input & Buttons Styling */
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn-cancel {
+  background: red;
+  color: white;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: none;
+  transition: 0.2s;
+}
+
+.btn-cancel:hover {
+  background: darkred;
+  transform: translateY(-2px);
+}

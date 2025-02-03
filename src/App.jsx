@@ -83,7 +83,7 @@ function App() {
         <button className="btn-secondary" onClick={generateShareableLink}>Copy Shareable Link</button>
       </div>
 
-      {/* ✅ Styled Modal */}
+      {/* ✅ Email Modal (Now Centered with Dark Background) */}
       {isModalOpen && (
         <div className="modal-overlay">
           <div className="modal">
@@ -101,6 +101,7 @@ function App() {
           </div>
         </div>
       )}
+
       {/* ✅ Floating GitHub Button with Icon */}
       <a 
         href="https://github.com/daraghkinvara/3d-fashion-designer" 
