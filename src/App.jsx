@@ -78,8 +78,8 @@ function App() {
       <div className="toolbar">
         <label>Color:</label>
         <input type="color" className="color-picker" value={color} onChange={(e) => setColor(e.target.value)} />
-        <button className="btn-primary" onClick={openModal}>Email Me the Design</button>
-        <button className="btn-secondary" onClick={generateShareableLink}>Copy Shareable Link</button>
+        <button className="btn-primary" onClick={openModal}>Share Design</button>
+        <button className="btn-secondary" onClick={generateShareableLink}>Copy Link</button>
       </div>
 
       {/* ✅ Email Modal (Now Centered with Dark Background) */}

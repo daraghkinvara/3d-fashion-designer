@@ -106,8 +106,12 @@ h1, h2, h3 {
 /* ✅ Responsive: Adjusts for Mobile */
 @media (max-width: 768px) {
   .toolbar {
-    flex-direction: column;
+    flex-direction: row;
     padding: 14px;
+  }
+  .canvas-container {
+    height: calc(100vh - 80px); /* ✅ Give more room on mobile */
+    margin-top: 80px;
   }
 }
 
